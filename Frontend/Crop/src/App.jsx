@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Dashboard from "./Pages/Dashboard.jsx"
+import DiseaseDetection from "./Pages/DiseaseDetection.jsx"
+import FirstPage from "./Pages/FirstPage.jsx"
+import OurTeam from "./Pages/OurTeam.jsx"
+import OurServices from "./Pages/OurServices.jsx"
+import Navbar from "./Components/Navbar.jsx"
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+export default function Homepage()
+{
+  return(
+  <>
+  {/* Yaha Jun MA Aafule Kam Garexa Tyo Wala Component matra rakha aru comment gara below */}
+    
+    <Navbar/>
+    <FirstPage/>
+    <OurServices/>
+    <Dashboard/>
+    <DiseaseDetection/>
+    
+  </>
+  );
 }
-
-export default App
