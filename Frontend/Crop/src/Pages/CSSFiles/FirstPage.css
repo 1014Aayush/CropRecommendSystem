@@ -1,0 +1,42 @@
+.first-page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: B0C3AD;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-opacity{
+    position: relative;
+    opacity: 0.5;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    z-index: 2;
+}
+
+.tree-image{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.header{
+    position: absolute;
+    top: 30px;
+    font-size: 130px;
+    z-index: 10;
+    color: #1F4520;
+
+}
+
+.soil {
+    position: relative;
+    margin-bottom: -200px;
+    width: 120%;
+    object-fit: contain;
+    margin-top: -250px;
+    z-index: -1;
+}
