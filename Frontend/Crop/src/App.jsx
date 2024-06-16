@@ -12,15 +12,14 @@ import React from "react";
 export default function Homepage()
 {
   return(
-  <>
-  {/* Yaha Jun MA Aafule Kam Garexa Tyo Wala Component matra rakha aru comment gara below */}
-    
-    // <Navbar/>
+  <div>
+  {/* Yaha Jun MA Aafule Kam Garexa Tyo Wala Component matra rakha aru comment gara below 
+     // <Navbar/>
     // <FirstPage/>
     // <OurServices/>
     // <Dashboard/>
-    // <DiseaseDetection/>
+    // <DiseaseDetection/>*/}
     
-  </>
+  </div>
   );
 }
