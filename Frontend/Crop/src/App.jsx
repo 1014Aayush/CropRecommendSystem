@@ -38,7 +38,6 @@ export default function Homepage() {
         />
       )}
       <DiseaseDetection />
-      <graph />
     </div>
   );
 }

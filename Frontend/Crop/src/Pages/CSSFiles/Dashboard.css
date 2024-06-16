@@ -2,11 +2,22 @@
 .PlantVitals
 {
 
-    background: -webkit-linear-gradient(#1F4520, #1D3E43);
+    background: -webkit-linear-gradient(#1F4520, #4c9677);
     display: flex;
     flex-direction: column;
     gap:3rem;
     align-items: center;
+    width: 100%;
+}
+
+.Dashboard
+{
+    background: -webkit-linear-gradient(#265427,#3b774e);
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    align-items: center;
+    justify-content:center ;
     width: 100%;
 }
 
