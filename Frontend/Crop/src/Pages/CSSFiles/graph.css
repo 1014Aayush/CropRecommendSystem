@@ -1,0 +1,19 @@
+.Graph{
+    background: -webkit-linear-gradient(#1F4520, #1D3E43);
+    display:flex;
+    flex-direction : column ;
+    gap: 2rem;
+    align-content: center;
+    
+}
+
+.heading{
+    font: Sans;
+    font-size: 45px;
+    margin: 0 auto;
+    color: white;
+    margin: 0 auto;
+}
+
+
+
