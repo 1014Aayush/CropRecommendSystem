@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
@@ -26,7 +27,6 @@ export default function Homepage() {
 
     fetchWeather();
   }, []);
-
   return (
     <div className="App">
       <Navbar />
@@ -37,8 +37,11 @@ export default function Homepage() {
         <Dashboard
           title="THREE HOURS FORECAST"
           data={weather.formattedForecastWeather.threeHourly}
+          data1={weather}
         />
       )}
+      )
+      
     </div>
   );
 }

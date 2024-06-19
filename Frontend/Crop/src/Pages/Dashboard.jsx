@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import "./CSSFiles/Dashboard.css";
 import Chart from "react-apexcharts";
 
-export default function Dashboard({ title, data}) {
+export default function Dashboard({ title, data, data1 }) {
   const [state, setState] = useState({
     temperature: {
       options: {
@@ -158,7 +158,7 @@ export default function Dashboard({ title, data}) {
           <br />
           <center>
             <div className="Heading1">
-              <h1 >
+              <h1>
                 {title}
                 <div className="Horizontal-line"></div>
               </h1>
@@ -179,12 +179,15 @@ export default function Dashboard({ title, data}) {
               type="line"
               width="800"
             />
+            <div className="heading3">
+              <center>Current Tempreature:{Math.round(data1.temp)}°C</center>
+            </div>
           </div>
           <center>
-          <br/>
-          <br/>
-          <br/>
-          <div className="heading2">Humidity</div>
+            <br />
+            <br />
+            <br />
+            <div className="heading2">Humidity</div>
           </center>
           <div
             style={{
@@ -200,6 +203,9 @@ export default function Dashboard({ title, data}) {
               type="line"
               width="800"
             />
+            <div className="heading3">
+              <center>Current Humidity:{Math.round(data1.humidity)}%</center>
+            </div>
           </div>
         </div>
       </div>
