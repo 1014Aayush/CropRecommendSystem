@@ -1,80 +1,102 @@
 import React from "react";
-import "./CSSFiles/OurTeam.css"
+import "./CSSFiles/OurTeam.css";
 
-
-export default function OurTeam()
-{
-    return(
-        
-        <>
-        <div className="DiseaseDetection">
-        
-            <div className="TopDDV">
-                <div className="DDLeft">
-                        <p>Disease Detection</p>
-                        <img className="tree_image" src="../src/assets/_a0ecfb5a-f636-4467-87de-db3910d14b5e 1.svg"></img>
-                </div>
-
-                <div className="Line"></div>
-                <div className="Description">
-                    <p>Harnessing the power of Convolution Neural Networks (CNN) to accurately detect and diagnose plant diseases, ensuring timely intervention for healthier crops</p></div>
+export default function OurTeam() {
+  return (
+    <>
+      <div className="DiseaseDetection">
+        <div className="PDD">
+          <div className="PDDLeft">
+            <div className="Heading1">
+              <p>Plant Disease Detection</p>
             </div>
-            
-
-            <div className="OurTeam">
-
-                <div className="TeamTop">
-                    <p>Our Team</p>
-                </div>
-
-                <div className="TeamBottom">
-
-                    <div className="BottomLeft">
-                        <div className="Info">
-                            <div className="Photo"></div>
-                            <div className="Text">
-                                <h3>Aayush</h3>
-                                <span>Developer</span>
-                            </div>
-                        </div>
-                        <div className="Info">
-                            <div className="Photo"></div>
-                            <div className="Text">
-                                <h3>Aayush</h3>
-                                <span>Developer</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="Line"></div>
-
-                    <div className="BottomLeft">
-                        <div className="Info">
-                            <div className="Photo"></div>
-                            <div className="Text">
-                                <h3>Aayush</h3>
-                                <span>Developer</span>
-                            </div>
-                        </div>
-                        <div className="Info">
-                            <div className="Photo"></div>
-                            <div className="Text">
-                                <h3>Aayush</h3>
-                                <span>Developer</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+            <div className="im">
+              <img className="DDLeftimg" src="../src/assets/hp.png"></img>
+              <img className="DDLeftimg" src="../src/assets/i.jpg"></img>
             </div>
+          </div>
 
+          <div className="line"></div>
 
+          <div className="Description">
+            <p>
+              Harnessing the power of Convolution Neural Networks (CNN) to
+              accurately detect and diagnose plant diseases, ensuring timely
+              intervention for healthier crops
+            </p>
+          </div>
         </div>
 
-        {/* code here */}
+        <div className="Ourteam">
+          <div className="Heading2">
+            <p>Our Team</p>
+          </div>
 
+          <div className="MBody">
+            <div className="Body">
+              <div className="Intro">
+                <div className="LIntroD">
+                  <h1>Mahir Manandhar</h1>
+                  <p>
+                    Hey I am Mahir I am the developer and researcher in this
+                    project
+                  </p>
+                </div>
+                <div className="IntroP">
+                  <img className="profile" src="../src/assets/a.png"></img>
+                </div>
+              </div>
 
-        </>
-    );
+              <div className="Intro">
+                <div className="LIntroD">
+                  <h1>Supriya Adhikari</h1>
+                  <p>
+                    Hey I am Supriya I am the developer and researcher in this
+                    project
+                  </p>
+                </div>
+
+                <div className="IntroP">
+                  <img className="profile" src="../src/assets/a.png"></img>
+                </div>
+              </div>
+            </div>
+
+            <div className="line"></div>
+
+            <div className="Body">
+              <div className="Intro">
+                <div className="IntroP">
+                  <img className="profile" src="../src/assets/a.png"></img>
+                </div>
+
+                <div className="RIntroD">
+                  <h1>Aayush Pokhrel</h1>
+                  <p>
+                    Hey I am Aayush I am the developer and researcher in this
+                    project
+                  </p>
+                </div>
+              </div>
+
+              <div className="Intro">
+                <div className="IntroP">
+                  <img className="profile" src="../src/assets/a.png"></img>
+                </div>
+                <div className="RIntroD">
+                  <h1>Anusha Rajlawat</h1>
+                  <p>
+                    Hey I am Anusha I am the developer and researcher in this
+                    project
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* code here */}
+    </>
+  );
 }

@@ -7,8 +7,7 @@
     flex-direction: column;
     gap:3rem;
     align-items: center;
-    border-radius: 30px;
-    width: 90%;
+    width: 100%;
 }
 
 .TopV{
@@ -24,7 +23,7 @@
 }
 
 .TopLeft{
-    background-color: black;
+    background-color: rgb(36, 91, 47);
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@
 .TopLeft p{
     font-size: 4rem;
     font-weight: bold;
-    background: -webkit-linear-gradient(#FFFFFF, #80ACBA);
+    background: -webkit-linear-gradient(#4d8351, #319b6b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
