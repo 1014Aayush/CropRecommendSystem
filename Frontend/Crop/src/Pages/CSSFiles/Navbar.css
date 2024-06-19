@@ -1,7 +1,7 @@
 .navbar-container{
     width: 100%;
     display: flex;
-    padding: 30px 100px;
+    padding: 20px 80px;
     justify-content: space-between;
     box-sizing: border-box;
     border-bottom: 1px solid gray;
@@ -22,7 +22,7 @@
 }
 .logo{
     margin-bottom: -40px;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 .a-container a {
@@ -41,6 +41,6 @@
     top: 0;
     width: 100%;
     z-index: 1000; /* Adjust this value as necessary to be higher than other elements */
-    background-color: white; /* Ensure the background is set so content underneath doesn't show through */
+    background-color: #d9d9d9; /* Ensure the background is set so content underneath doesn't show through */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }

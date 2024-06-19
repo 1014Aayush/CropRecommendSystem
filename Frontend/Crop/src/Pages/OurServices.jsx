@@ -1,98 +1,93 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import "./CSSFiles/OurServices.css"
-import moisture from "../assets/images/moisicon.png"
+import "./CSSFiles/OurServices.css";
+import warm from "../assets/images/Warm.png";
+import humidity from "../assets/images/Humidity.png";
+import graph from "../assets/images/Graph.png";
+import crop from "../assets/images/plant.png";
 
-
-export default function OurServices()
-{
-    return(
-        
-        <section className="App-header" id="service">
-        <div className="services">
-            <div className="Topic">
-            <p>What do we offer?</p>
+export default function OurServices() {
+  return (
+    <section className="App-header" id="service">
+      <div className="services">
+        <div className="Topic">
+          <p>WHAT DO WE OFFER?</p>
+        </div>
+        <div className="cards">
+          <div className="card1">
+            <div className="header-text">
+              <br />
+              <center>
+                <p>
+                  ENVIRONMENT <br />
+                  DATA VISUALIZATION
+                </p>
+              </center>
             </div>
+            <br />
+            <br />
+            <br />
+            <div className="Horizontal-line"></div>
+            <br />
+            <div >
+              <div className="container">
+                <img className="image" src={warm} />
+                <p>Temperature</p>
+              </div>
 
-                 <div className="cards">
+              <div className="container">
+                <img className="image" src={humidity} />
+                <p>Humidity</p>
+              </div>
+            </div>
+          </div>
 
-                    <div className="card1">
-                        <div className="header-text">
-                        <p>SOIL DATA VISUALIZATION</p></div>
-                        <div className="Horizontal-line">
-                        </div>
-                        <div className="desc">
-                            <div className="point1">
-                                    <div className="point1desc">
-                                    <img className="img2" src = {moisture}/>
-                                    <p>Moisture data</p> 
-                                    </div>  
-                            </div>
-                            <div className="point2">
-                            <div className="point1desc">
-                                    <img className="img2" src = {moisture}/>
-                                    <p>Humidity data</p> 
-                                    </div>
-                            </div>
-                            <div className="point3">
-                            <div className="point1desc">
-                                    <img className="img2" src = {moisture}/>
-                                    <p>Soil data</p> 
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card2">
-                        <div className="header-text">
-                        <p> CROP SUGGESTION</p></div>
-                        <div className="Horizontal-line">
-                        </div>
-                        <div className="p1">
-                       <p>Tailored crop suggestions for optimal yield and sustainability.</p>
-                        </div>
-
-                        <img className="img2" src = {moisture}/>
-
-                        {/* <div className="p2">
-                            <p> Card 2 point no 2</p>
-                            
-                        </div>
-
-                        <div className="p3">
-                            <p>card 2 point 3</p>
-                        </div> */}
-                    </div>
-                    <div className="card3"><div className="header-text">
-
-                        <p>YIELD PREDICTION</p></div>
-                        <div className="Horizontal-line">
-                        </div>
-                        <div className="p31">
-                        <img className="img2" src = {moisture}/>
-                            <p>
-                             Forecast future harvests with precision.
-                            </p>
-                        </div>
-
-                        
-                    </div>
-
-
-            
-            
-
-            
+          <div className="card2">
+            <div className="header-text">
+              <br />
+              <p>
+                {" "}
+                CROP <br />
+                RECOMENDATION
+              </p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div className="Horizontal-line"></div>
+            <br />
+            <div >
+              <center>
+                <img className="crop" src={crop} />
+              </center>
+              <p>
+                Tailored crop suggestions for optimal yield and sustainability.
+              </p>
+            </div>
+          </div>
+          <div className="card3">
+            <div className="header-text">
+              <br />
+              <p>
+                YIELD
+                <br />
+                PREDICTION
+              </p>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div className="Horizontal-line"></div>
+            <br />
+            <div >
+              <center>
+                <img className="graph" src={graph} />
+              </center>
+              <p>Forecast future harvests with precision.</p>
+            </div>
+          </div>
         </div>
-
-
-
-        </div>
-       
-
-        
-
-
-        </section>
-    );
+      </div>
+    </section>
+  );
 }
