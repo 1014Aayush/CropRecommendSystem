@@ -9,6 +9,7 @@ import OurServices from "./Pages/OurServices.jsx"
 import Navbar from "./Components/Navbar.jsx"
 import graph from "./Pages/graph.jsx" 
 import './App.css'
+import { Route, Router } from "react-router";
 
 
 export default function Homepage()
@@ -16,17 +17,15 @@ export default function Homepage()
   return(
   <div>
 
-    
+  
 
-   
-   
   <Navbar/>
   <FirstPage/>
   <OurServices/> 
   <OurTeam/>
   <Dashboard/>
   <DiseaseDetection/> 
-  <graph/>
+  <graph/> 
  
  
 
