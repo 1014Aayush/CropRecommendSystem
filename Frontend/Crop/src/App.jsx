@@ -1,5 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
+
+import getFormattedWeatherData from "./weatherService";
 
 import Dashboard from "./Pages/Dashboard.jsx"
 import DiseaseDetection from "./Pages/DiseaseDetection.jsx"
@@ -11,25 +14,34 @@ import graph from "./Pages/graph.jsx"
 import './App.css'
 import { Route, Router } from "react-router";
 
+export default function Homepage() {
+  const [weather, setWeather] = useState(null);
 
-export default function Homepage()
-{
-  return(
-  <div>
 
-  
+  useEffect(() => {
+    const fetchWeather = async () => {
+      const data = await getFormattedWeatherData({ q: "dhulikhel" });
+      setWeather(data);
+    };
 
-  <Navbar/>
-  <FirstPage/>
-  <OurServices/> 
-  <OurTeam/>
-  <Dashboard/>
-  <DiseaseDetection/> 
-  <graph/> 
- 
- 
+    fetchWeather();
+  }, []);
 
-  </div>
 
+
+  return (
+    <div>
+      <Navbar />
+      <FirstPage />
+      <OurServices />
+      <OurTeam />
+      {weather && (
+        <Dashboard
+          title="3 hour forecast"
+          data={weather.formattedForecastWeather.threeHourly}
+        />
+      )}
+      <DiseaseDetection />
+    </div>
   );
 }
