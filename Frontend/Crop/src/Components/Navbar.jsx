@@ -8,7 +8,7 @@ import { HashLink } from "react-router-hash-link";
 
 
 
-const Navbar = () => {
+const Navbar = () => {   
   return (
     <BrowserRouter>
     <div className='navbar'>

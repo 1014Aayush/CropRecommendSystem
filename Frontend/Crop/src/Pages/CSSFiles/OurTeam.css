@@ -1,6 +1,6 @@
 .DiseaseDetection
 {
-    background: #265427;
+
     display: flex;
     flex-direction: column;
     gap:3rem;
@@ -63,9 +63,8 @@
     font-size: 26px;
     text-align: center;
     font-weight: lighter;
-    background-color: #FFFFFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-color: #d9d9d9;
+
     align-items: center;
     width: 90%;
     
@@ -73,24 +72,27 @@
 }
 
 .Ourteam {
+    background-color: #265427;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: -webkit-linear-gradient(#ffffff, #80ACBA);
-    -webkit-background-clip: text;
+    width: 83%;
+
     -webkit-text-fill-color: transparent;
-    /* border: 3px solid rgb(4, 193, 223);
-    border-radius:1rem; */
+    border-top-right-radius:2rem;
+    border-top-left-radius:2rem;
 }
 
 .Heading2 p{
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 70px;
     text-align: center;
     background: -webkit-linear-gradient(#ffffff, #80ACBA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    
 }
 
 .MBody {
@@ -116,11 +118,9 @@
 
 .Intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:3rem;
     align-items: center;
-    border-radius: 30px;
-    width: 90%;
 }
 
 .IntroD {
@@ -136,36 +136,54 @@
     font-size: 20px;
     font-weight: bold;
     text-align: right;
-    background-color: #FFFFFF;
+    background-color: #d9d9d9;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: 400;
 }
 
 .LIntroD h1{
     font-size: 26px;
     font-weight: bold;
     text-align: right;
-    background-color: #FFFFFF;
+    background-color: #d9d9d9;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .RIntroD p{
     font-size: 20px;
     font-weight: bold;
     text-align: left;
-    background-color: #FFFFFF;
+    background-color: #d9d9d9;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: large;
+    font-weight: 400;
 }
 
 .RIntroD h1{
     font-size: 26px;
     font-weight: bold;
     text-align: left;
-    background-color: #FFFFFF;
+    background-color: #d9d9d9;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .IntroP {
@@ -174,15 +192,40 @@
     width: 20%;
 }
 
-.profile {
-    width: 100px;
-    height: 150px;
-    justify-content: center;
+.circular-image {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the container */
+        border-radius: 50%; /* Ensure the image itself is also circular */
+        position: relative; /* Ensure the image fits within the container */
+
+      
     
 }
 
 .line{
     width: 11px;
-    height: 340px;
+    height: 640px;
     background-color: #D9D9D9;
 }
+
+/* src/CircularContainer.css */
+.circular-container {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  border-radius: 50%; /* This makes the container circular */
+  background-color: lightblue; /* Adjust the color as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.Horizontal-line {
+    width: 200px;
+    height: 2px;
+    background-color: #d9d9d9;
+
+  }

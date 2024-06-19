@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import getFormattedWeatherData from "./weatherService";
 
 import Dashboard from "./Pages/Dashboard.jsx";
-import DiseaseDetection from "./Pages/DiseaseDetection.jsx";
 import FirstPage from "./Pages/FirstPage.jsx";
 import OurTeam from "./Pages/OurTeam.jsx";
 import OurServices from "./Pages/OurServices.jsx";
@@ -29,20 +28,17 @@ export default function Homepage() {
   }, []);
 
   return (
-
-      <div className="App">
-        
-        <Navbar/>
-        <FirstPage />
-        <OurServices />
-        <OurTeam />
-        {weather && (
-          <Dashboard
-            title="3 hour forecast"
-            data={weather.formattedForecastWeather.threeHourly}
-          />
-        )}
-      </div>
-
+    <div className="App">
+      <Navbar />
+      <FirstPage />
+      <OurServices />
+      <OurTeam />
+      {weather && (
+        <Dashboard
+          title="THREE HOURS FORECAST"
+          data={weather.formattedForecastWeather.threeHourly}
+        />
+      )}
+    </div>
   );
 }

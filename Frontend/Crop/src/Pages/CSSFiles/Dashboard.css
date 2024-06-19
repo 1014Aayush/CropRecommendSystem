@@ -1,75 +1,102 @@
-
-.PlantVitals
-{
-
-    background: -webkit-linear-gradient(#1F4520, #4c9677);
-    display: flex;
-    flex-direction: column;
-    gap:3rem;
-    align-items: center;
-    width: 100%;
+.PlantVitals {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+  
 }
 
-.Dashboard
-{
-    background: -webkit-linear-gradient(#265427,#3b774e);
-    display: flex;
-    flex-direction: column;
-    gap:3rem;
-    align-items: center;
-    justify-content:center ;
-    width: 100%;
+.Dashboard {
+  background: -webkit-linear-gradient(#265427, #3b774e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  width: 83%;
+
+
 }
 
-.TopV{
-    background-color: #80ACBA;
-    width:88%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap:4rem;
-    
+.TopV {
+  background-color: #80acba;
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 4rem;
 }
 
-.TopLeft{
-    background-color: rgb(36, 91, 47);
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    
+.TopLeft {
+  background-color: rgb(36, 91, 47);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.TopLeft p{
-    font-size: 4rem;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#4d8351, #319b6b);
+.TopLeft p {
+  font-size: 4rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#4d8351, #319b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Moisture {
+  border: 3px solid rgb(4, 193, 223);
+  border-radius: 1rem;
+  width: 30rem;
+  height: 20rem;
+}
+
+.MiddleV {
+  width: 88%;
+  height: 40vh;
+  border: 3px solid rgb(4, 193, 223);
+  border-radius: 1rem;
+}
+
+.BottomV {
+  width: 88%;
+  height: 40vh;
+  border: 3px solid rgb(4, 193, 223);
+  border-radius: 1rem;
+}
+
+
+.Heading1{
+    font-size: 50px;
+    text-align: center;
+    background: -webkit-linear-gradient(#ffffff, #80ACBA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    
 }
 
-.Moisture{
-    border: 3px solid rgb(4, 193, 223);
-    border-radius:1rem;
-    width:30rem;
-    height: 20rem;
-}
+.Horizontal-line {
+    width: 200%;
+    height: 2px;
+    background-color: #d9d9d9;
 
-.MiddleV{
-    width:88%;
-    height:40vh;
-    border: 3px solid rgb(4, 193, 223);
-    border-radius:1rem;
-}
+  }
 
-.BottomV{
-    width:88%;
-    height:40vh;
-    border: 3px solid rgb(4, 193, 223);
-    border-radius:1rem;
+
+.heading2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d9d9d9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
 }
