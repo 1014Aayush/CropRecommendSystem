@@ -7,6 +7,7 @@ import OurServices from "./Pages/OurServices.jsx"
 import Navbar from "./Components/Navbar.jsx"
 import graph from "./Pages/graph.jsx" 
 import './App.css'
+import { Route, Router } from "react-router";
 
 export default function Homepage()
 {
@@ -14,15 +15,13 @@ export default function Homepage()
   <>
   {/* Yaha Jun MA Aafule Kam Garexa Tyo Wala Component matra rakha aru comment gara below */}
     
-   
-   
   <Navbar/>
   <FirstPage/>
   <OurServices/> 
   <OurTeam/>
   <Dashboard/>
   <DiseaseDetection/> 
-  <graph/>
+  <graph/> 
  
   </>
   
