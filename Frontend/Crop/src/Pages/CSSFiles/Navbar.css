@@ -14,6 +14,10 @@
     display: inline-flex;
     justify-content: space-evenly;
     font-size: 23px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 450;
+    font-style: italic;
     
 }
 .logo{
@@ -21,11 +25,22 @@
     margin-top: -25px;
 }
 
-a{
+.a-container a {
     text-decoration: none;
-    color: rgb(107, 107, 107);
-}
+    color: black; /* Initial color of the links */
+    padding: 10px;
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .a-container a:hover {
+    color: rgb(26, 105, 31); /* Change this to the desired hover color */
+  }
 
-a:hover{
-    color: black;
-}
+.navbar {
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust this value as necessary to be higher than other elements */
+    background-color: white; /* Ensure the background is set so content underneath doesn't show through */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }

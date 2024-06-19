@@ -17,40 +17,40 @@ export default function Dashboard({ title, data }) {
           categories: data ? data.map((d) => d.title) : [],
           labels: {
             style: {
-              colors: "#ffffff", // Change this to your desired label color
+              colors: "#ffffff", 
             },
           },
           axisBorder: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff",
           },
           axisTicks: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
         },
         yaxis: {
           labels: {
             formatter: (value) => Math.round(value),
             style: {
-              colors: "#ffffff", // Change this to your desired label color
+              colors: "#ffffff", 
             },
           },
           axisBorder: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
           axisTicks: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
         },
         stroke: {
-          colors: ["#ffffff"], // Change this to your desired line color
+          colors: ["#ffffff"], 
         },
         markers: {
           size: 6, // Size of the marker dots
-          colors: ["#ffffff "], // Change this to your desired marker color
+          colors: ["#ffffff "], 
         },
       },
       series: [
@@ -69,40 +69,40 @@ export default function Dashboard({ title, data }) {
           categories: data ? data.map((d) => d.title) : [],
           labels: {
             style: {
-              colors: "#ffffff", // Change this to your desired label color
+              colors: "#ffffff", 
             },
           },
           axisBorder: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
           axisTicks: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
         },
         yaxis: {
           labels: {
             formatter: (value) => Math.round(value),
             style: {
-              colors: "#ffffff", // Change this to your desired label color
+              colors: "#ffffff", 
             },
           },
           axisBorder: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
           axisTicks: {
             show: true,
-            color: "#ffffff", // Change this to your desired axis color
+            color: "#ffffff", 
           },
         },
         stroke: {
-          colors: ["#ffffff"], // Change this to your desired line color
+          colors: ["#ffffff"], 
         },
         markers: {
-          size: 6, // Size of the marker dots
-          colors: ["#ffffff"], // Change this to your desired marker color
+          size: 6, 
+          colors: ["#ffffff"], 
         },
       },
       series: [
@@ -150,6 +150,7 @@ export default function Dashboard({ title, data }) {
   }, [data]);
 
   return (
+    <section className="App-header" id="dashboard">
     <div className="Dashboard">
       <center>
         <h1 style={{ color: "white" }}>{title}</h1>
@@ -177,5 +178,6 @@ export default function Dashboard({ title, data }) {
       />
       </div>
     </div>
+    </section>
   );
 }

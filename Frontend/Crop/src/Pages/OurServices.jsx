@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./CSSFiles/OurServices.css"
 import moisture from "../assets/images/moisicon.png"
@@ -7,7 +8,7 @@ export default function OurServices()
 {
     return(
         
-        <>
+        <section className="App-header" id="service">
         <div className="services">
             <div className="Topic">
             <p>What do we offer?</p>
@@ -92,6 +93,6 @@ export default function OurServices()
         
 
 
-        </>
+        </section>
     );
 }

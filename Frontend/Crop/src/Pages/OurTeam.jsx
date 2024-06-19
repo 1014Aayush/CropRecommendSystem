@@ -4,7 +4,7 @@ import "./CSSFiles/OurTeam.css";
 
 export default function OurTeam() {
   return (
-    <>
+    <section className="App-header" id="team"> 
       <div className="DiseaseDetection">
         <div className="PDD">
           <div className="PDDLeft">
@@ -97,7 +97,7 @@ export default function OurTeam() {
         </div>
       </div>
 
-      {/* code here */}
-    </>
+
+    </section>
   );
 }
