@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+
 import Dashboard from "./Pages/Dashboard.jsx"
 import DiseaseDetection from "./Pages/DiseaseDetection.jsx"
 import FirstPage from "./Pages/FirstPage.jsx"
@@ -9,12 +11,14 @@ import graph from "./Pages/graph.jsx"
 import './App.css'
 import { Route, Router } from "react-router";
 
+
 export default function Homepage()
 {
   return(
-  <>
-  {/* Yaha Jun MA Aafule Kam Garexa Tyo Wala Component matra rakha aru comment gara below */}
-    
+  <div>
+
+  
+
   <Navbar/>
   <FirstPage/>
   <OurServices/> 
@@ -23,7 +27,9 @@ export default function Homepage()
   <DiseaseDetection/> 
   <graph/> 
  
-  </>
-  
+ 
+
+  </div>
+
   );
 }
