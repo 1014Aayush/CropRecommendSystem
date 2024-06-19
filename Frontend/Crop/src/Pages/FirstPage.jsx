@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./CSSFiles/FirstPage.css"
 import image from "../assets/images/treetree.png";
@@ -6,7 +7,7 @@ export default function FirstPage()
 {
     return(
         
-        <>
+        <section className="App-header" id="home">
         <div className="first-page">
             <h1 className="header" id="header-line">
                     Reignitin<span className="header-opacity">g Agr</span>iculture<br/>
@@ -16,6 +17,6 @@ export default function FirstPage()
             <img src={soil} alt="" className="soil"/>
         </div>
        
-        </>
+        </section>
     );
 }
